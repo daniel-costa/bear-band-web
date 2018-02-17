@@ -1,0 +1,136 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Just a Bear", arial;
+  color: white;
+  text-align: center;
+  background: #905d41;
+}
+
+h1 {
+  font-size: 8em;
+  margin-bottom: 0px;
+  line-height: 0.83em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px 1px black;
+  /* TODO ask Daniel what's the best way to vertically center h1, h2
+     TODO Social Buttons (Facebook & Youtube under h1,h2) */
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px 0;
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+nav {
+  position: fixed;
+  background: #905d41;
+  width: 100%;
+  top: 0;
+}
+
+nav a {
+  padding: 7px 20px;
+  display: inline-block;
+  /*color inherited from a*/
+}
+
+nav a:hover {
+  background: white;
+  border-bottom: 2px black solid;
+  color: black;
+}
+
+nav a.active {
+  background: white;
+  color: black;
+  border-bottom: 2px white solid;
+ }
+
+section {
+  max-width: 1200px;
+  width: 80vw;
+  height: 70vh;
+  margin: 0px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 0.9em;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+.splash {
+  background-image: url("../images/background-splash.jpg");
+  background-position: top center;
+}
+
+.splash h2 {
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.media {
+  background-image: url("../images/background-media.jpg");
+  /* TODO responsive video centered x&y in .media */
+}
+
+.live {
+  background-image: url("../images/background-live.jpg");
+  background-position: top center;
+}
+
+.live .backdrop {
+  background: rgba(192,192,192,0.5);
+  padding: 20px;
+  margin: auto 5%;
+  overflow: auto;
+}
+
+.live .backdrop > *:first-child {
+  margin: 0px auto;
+  font-size: 3em;
+}
+
+.live td:first-child,
+.live td:last-child {
+  width: 150px;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
