@@ -24,17 +24,18 @@ a:hover {
   border-top: none;
 }
 
-nav {
-  background: #905d41;
+nav.navbar-dark {
+  background-color: rgba(144, 93, 65, 0.9);
+  font-size: 1.2em;
 }
 
-nav a {
-  /*color inherited from a*/
-}
-
-nav a:hover {
+nav.navbar-dark .nav-link:hover,
+nav.navbar-dark .nav-link:focus {
+  color: black !important;
   background: white;
-  color: black;
+}
+
+nav.navbar-dark .nav-link:hover {
   text-decoration: none;
 }
 
