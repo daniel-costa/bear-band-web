@@ -10,6 +10,7 @@ body {
 
 h1, h2 {
   text-shadow: 2px 2px 1px black;
+  /* the comment bellow is wrong, too many closing tags */
   /*TODO Social Buttons (Facebook & Youtube under h1,h2) */*/
 }
 
@@ -31,9 +32,30 @@ a:hover {
   border-top: none;
 }
 
+/* line 36 you use nav, line 40 you use nav.navbar-dark. Is it in purpose? */
 nav {
   margin: 0;
 }
+
+/* 
+  take the habit to write your styles in a certain order. 
+  For example:
+  1) box beahviour (width, height, position, top, left, margin, etc) (= affects box sizing)
+  2) Color, shadows, etc (= affects box style)
+  3) fonts and etc (= affects font / text properties)
+
+  > background-color: rgba(127, 85, 61, 0.9);
+  > font-size: 1.2em;
+  > position: fixed;
+  > width: 100%;
+
+  becomes
+  
+  > position: fixed;
+  > width: 100%;
+  > background-color: rgba(127, 85, 61, 0.9);
+  > font-size: 1.2em;
+*/
 
 nav.navbar-dark {
   background-color: rgba(127, 85, 61, 0.9);
@@ -104,6 +126,8 @@ section {
   width: 150px;
 }
 
+/* you declared the .splash elements, then .live, then .splash */
+
 .splash span {
   text-align: center;
   text-decoration: none;
@@ -111,25 +135,37 @@ section {
   border-radius: 50%;
 }
 
+/* all spans? */
 span:before {
   font-size: 1.9em;
 }
 
+/* all spans? */
 span:hover {
   opacity: 1;
   text-decoration: none;
 }
 
+/* all fa-facebook or only this one? */
 .fa-facebook {
   background: #3B5998;
   padding: 13px 23px;
 }
 
+/* all fa-youtube or only this one? */
 .fa-youtube {
   background: #ff0000;
   padding: 13px 20px;
 } 
 
+/*
+  maby better to get those in a seperate file. 
+  the reason is because you have to INSURE it's loaded after the all code to overwritte correctly.
+  By best practice (when it's not module separeted) I put them in a new responsive.css or media.css file
+  I link them on the html file with a comment like
+  <!-- Ensure load priority to last -->
+  <tag_here ... />
+*/
 @media (max-width: 992px){
   .container{
     max-width:100%;
@@ -146,10 +182,12 @@ span:hover {
   }
 
   .container {
+    /* this seems dangerous to me */
     padding: 0;
   }
 
   .container-fluid {
+    /* this seems dangerous to me */
     padding: 0;
   }
 
