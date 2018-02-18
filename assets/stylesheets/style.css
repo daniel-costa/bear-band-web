@@ -1,12 +1,16 @@
 body {
   font-family: "Just a Bear", arial;
   color: white;
-  background: #905d41;
+  background: #7f553d;
 }
 
 h1, h2 {
   text-shadow: 2px 2px 1px black;
   /*TODO Social Buttons (Facebook & Youtube under h1,h2) */*/
+}
+
+.row {
+  margin: 0;
 }
 
 a,
@@ -23,9 +27,13 @@ a:hover {
   border-top: none;
 }
 
+nav {
+  margin: 0;
+}
+
 nav.navbar-dark {
-  background-color: rgba(144, 93, 65, 0.9);
-  font-size: 1.1em;
+  background-color: rgba(127, 85, 61, 0.9);
+  font-size: 1.2em;
   position: fixed;
   width: 100%;
 }
@@ -35,7 +43,6 @@ nav.navbar-dark .nav-link:hover,
 nav.navbar-dark .nav-link:focus {
   color: black !important;
   background: white;
-  height: 110%;
 }
 
 nav.navbar-dark .nav-link:hover {
@@ -65,15 +72,21 @@ section {
 
 .card {
   background: none;
+  border: none;
 }
 
 .media {
   background-image: url("../images/background-media.jpg");
 }
 
+.embed-soundcloud {
+  margin-top: 5%;
+}
+
 .live {
   background-image: url("../images/background-live.jpg");
   background-position: top center;
+  min-height: 70vh;
 }
 
 .live .backdrop {
@@ -85,3 +98,80 @@ section {
 .live td:last-child {
   width: 150px;
 }
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.fa:hover {
+    opacity: 1;
+    text-decoration: none;
+
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-youtube {
+    background: #ff0000;
+    color: white;
+    border-radius: 50%;
+} 
+
+@media (max-width: 992px){
+  .container{
+    max-width:100%;
+  }
+}
+
+@media (max-width: 768px){
+  .display-1 {
+    font-size: 5.5rem;
+  }
+
+  .splash h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .embed-soundcloud {
+    margin-bottom: 5%;
+  }
+
+  .media h2 {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 567px){
+  .display-1 {
+    font-size: 4.5rem;
+  }
+
+  .splash h2 {
+    font-size: 20px;
+  }
+}
+
+/*
+Extra small <576px 
+Small ≥576px
+Medium ≥768px
+Large ≥992px
+Extra large ≥1200px
+*/

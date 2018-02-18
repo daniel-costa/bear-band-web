@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="assets/stylesheets/style.css">
     <link rel="stylesheet" href="assets/stylesheets/debug.css">
     <link rel="stylesheet" href="assets/stylesheets/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Just a Bear - Band</title>
   </head>
   <body class="debug-off text-center">
-    <nav class="navbar navbar-dark navbar-expand-sm sticky-top p-1">
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top p-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,19 +33,28 @@
     </nav>
     <main class="container">
       <section id="splash" class="splash">
-          <div class="row h-100"> 
+          <div class="row h-100 pt-5 mt-5"> 
             <div class="col-sm-12 my-auto">
               <div class="card card-block">
                 <h1 class="display-1 mb-0">Just a Bear</h1>
                 <h2>Prinzessinnenrock aus Bremen</h2>
-              </div>  
+                <div>
+                  <a href="https://www.facebook.com/justabear.band" target="_blank" class="fa fa-facebook"></a>
+                  <a href="https://www.youtube.com/channel/UCwxS5Ty78TX-l13KQfSi8Zg/featured" target="_blank" class="fa fa-youtube"></a>
+                </div>
+              </div>
             </div>
           </div>
       </section>
       <section id="media" class="media p-md-5">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EX42zi6uZyI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>      
+        <div class="container-fluid">      
+          <h2>Media</h2> 
+            <div class="row col*-12 embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/EX42zi6uZyI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="row col*-12 embed-soundcloud">
+              <iframe width="100%" height="133" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/181335833&amp;color=%2314051a&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+            </div>
       </section>
       <section id="live" class="live p-sm-5">
         <div class="backdrop mx-xl-5">
@@ -80,7 +90,7 @@
       </section>
     </main>
     <footer class="py-3">
-      <a href="mailto:booking@justabear.de">booking@justabear.de</a> - <a href=#> Impressum</a> - <a href=#> Tech-Rider + Press-Kit</a><br>© Just a Bear 
+      <a href="mailto:booking@justabear.de">booking@justabear.de</a> - <a href=#> Impressum</a> - <a href=#> Tech-Rider</a> - <a href=#> Press-Kit</a> <br>© Just a Bear 
     </footer>
     <div class="debug-size">
       <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">xs</div>
