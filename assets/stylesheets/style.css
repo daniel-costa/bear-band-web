@@ -2,6 +2,7 @@ body {
   font-family: "Just a Bear", arial;
   color: white;
   background: #7f553d;
+  position: relative;
 }
 
 .container {
@@ -36,21 +37,30 @@ nav {
 }
 
 nav.navbar-dark {
-  background-color: rgba(127, 85, 61, 0.9);
+  background-color: rgba(127, 85, 61, 0.96);
   font-size: 1.2em;
   position: fixed;
   width: 100%;
 }
 
-
 nav.navbar-dark .nav-link:hover,
 nav.navbar-dark .nav-link:focus {
-  color: black !important;
+  color: #7f553d !important;
   background: white;
 }
 
 nav.navbar-dark .nav-link:hover {
   text-decoration: none;
+}
+
+.nav-link {
+  padding-bottom: 12px;
+  padding-top: 10px;
+}
+
+.active {
+  background-color: white;
+  color: #7f553d !important;
 }
 
 main {
@@ -68,6 +78,7 @@ section {
   background-image: url("../images/background-splash.jpg");
   background-position: top center;
   height: 70vh;
+  margin-top: 50px;
 }
 
 .splash h2 {
