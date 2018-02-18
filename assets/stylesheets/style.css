@@ -5,18 +5,8 @@ body {
   position: relative;
 }
 
-.container {
-  max-width: 1300px;
-}
-
 h1, h2 {
   text-shadow: 2px 2px 1px black;
-  /* the comment bellow is wrong, too many closing tags */
-  /*TODO Social Buttons (Facebook & Youtube under h1,h2) */*/
-}
-
-.row {
-  margin: 0;
 }
 
 a,
@@ -29,13 +19,20 @@ a:hover {
   text-decoration: underline;
 }
 
-.table td {
-  border-top: none;
+main {
+  max-width: 1300px;
+  top: 0;
 }
 
-/* line 36 you use nav, line 40 you use nav.navbar-dark. Is it in purpose? */
-nav {
-  margin: 0;
+section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table td {
+  border-top: 0;
 }
 
 /* 
@@ -58,20 +55,17 @@ nav {
   > font-size: 1.2em;
 */
 
-nav.navbar-dark {
-  background-color: rgba(127, 85, 61, 0.96);
+.navbar-dark {
+  background-color: rgba(127, 85, 61, .96);
   font-size: 1.2em;
   position: fixed;
   width: 100%;
 }
 
-nav.navbar-dark .nav-link:hover,
-nav.navbar-dark .nav-link:focus {
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link:focus {
   color: #7f553d !important;
-  background: white;
-}
-
-nav.navbar-dark .nav-link:hover {
+  background: #fff;
   text-decoration: none;
 }
 
@@ -80,20 +74,9 @@ nav.navbar-dark .nav-link:hover {
   padding-top: 10px;
 }
 
-.active {
+.nav-link.active {
   background-color: white;
   color: #7f553d !important;
-}
-
-main {
-  top: 0;
-}
-
-section {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .splash {
@@ -107,17 +90,43 @@ section {
   font-size: 40px;
 }
 
-.card {
+.splash .card {
   background: none;
   border: none;
   margin-top: 15%;
+}
+
+.splash span {
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+.splash span:before {
+  font-size: 1.9em;
+}
+
+.splash span:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.splash .fa-facebook {
+  background: #3B5998;
+  padding: 13px 23px;
+}
+
+.splash .fa-youtube {
+  background: #ff0000;
+  padding: 13px 20px;
 }
 
 .media {
   background-image: url("../images/background-media.jpg");
 }
 
-.embed-soundcloud {
+.media .embed-soundcloud {
   margin-top: 5%;
 }
 
@@ -138,36 +147,6 @@ section {
 }
 
 /* you declared the .splash elements, then .live, then .splash */
-
-.splash span {
-  text-align: center;
-  text-decoration: none;
-  opacity: 0.6;
-  border-radius: 50%;
-}
-
-/* all spans? */
-span:before {
-  font-size: 1.9em;
-}
-
-/* all spans? */
-span:hover {
-  opacity: 1;
-  text-decoration: none;
-}
-
-/* all fa-facebook or only this one? */
-.fa-facebook {
-  background: #3B5998;
-  padding: 13px 23px;
-}
-
-/* all fa-youtube or only this one? */
-.fa-youtube {
-  background: #ff0000;
-  padding: 13px 20px;
-} 
 
 /*
   maby better to get those in a seperate file. 
