@@ -6,8 +6,7 @@ body {
 
 h1, h2 {
   text-shadow: 2px 2px 1px black;
-  /* TODO ask Daniel what's the best way to vertically center h1, h2
-     TODO Social Buttons (Facebook & Youtube under h1,h2) */
+  /*TODO Social Buttons (Facebook & Youtube under h1,h2) */*/
 }
 
 a,
@@ -26,17 +25,25 @@ a:hover {
 
 nav.navbar-dark {
   background-color: rgba(144, 93, 65, 0.9);
-  font-size: 1.2em;
+  font-size: 1.1em;
+  position: fixed;
+  width: 100%;
 }
+
 
 nav.navbar-dark .nav-link:hover,
 nav.navbar-dark .nav-link:focus {
   color: black !important;
   background: white;
+  height: 110%;
 }
 
 nav.navbar-dark .nav-link:hover {
   text-decoration: none;
+}
+
+main {
+  top: 0;
 }
 
 section {
@@ -49,15 +56,19 @@ section {
 .splash {
   background-image: url("../images/background-splash.jpg");
   background-position: top center;
+  height: 70vh;
 }
 
 .splash h2 {
   font-size: 40px;
 }
 
+.card {
+  background: none;
+}
+
 .media {
   background-image: url("../images/background-media.jpg");
-  /* TODO responsive video centered x&y in .media */
 }
 
 .live {
