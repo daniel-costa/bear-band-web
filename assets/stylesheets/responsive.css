@@ -2,6 +2,9 @@
   .container{
     max-width:100%;
   }
+
+  .splash {
+  margin-top: 20%;
 }
 
 @media (max-width: 768px){
@@ -27,6 +30,10 @@
     font-size: 4.5rem;
   }
 
+  .splash {
+  margin-top: 25%;
+}
+
   .splash h2 {
     font-size: 20px;
   }
@@ -34,7 +41,10 @@
   .live {
     font-size: 0.9em;
   }
-}
+
+  .live h2 {
+    padding-top: 15px;
+  }
 
 /*
 Extra small <576px 
