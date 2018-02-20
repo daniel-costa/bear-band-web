@@ -1,0 +1,51 @@
+@media (max-width: 992px){
+  .container{
+    max-width:100%;
+  }
+}
+
+@media (max-width: 768px){
+  .display-1 {
+    font-size: 5.5rem;
+  }
+
+  .splash h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    /* this seems dangerous to me */
+    padding: 0;
+  }
+
+  .container-fluid {
+    /* this seems dangerous to me */
+    padding: 0;
+  }
+
+  .embed-soundcloud {
+    margin-bottom: 5%;
+  }
+
+  .media h2 {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 567px){
+  .display-1 {
+    font-size: 4.5rem;
+  }
+
+  .splash h2 {
+    font-size: 20px;
+  }
+}
+
+/*
+Extra small <576px 
+Small ≥576px
+Medium ≥768px
+Large ≥992px
+Extra large ≥1200px
+*/

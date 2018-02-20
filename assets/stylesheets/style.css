@@ -1,12 +1,8 @@
 body {
+  position: relative;
+  background: #7f553d;
   font-family: "Just a Bear", arial;
   color: white;
-  background: #7f553d;
-  position: relative;
-}
-
-h1, h2 {
-  text-shadow: 2px 2px 1px black;
 }
 
 a,
@@ -31,35 +27,11 @@ section {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.table td {
-  border-top: 0;
-}
-
-/* 
-  take the habit to write your styles in a certain order. 
-  For example:
-  1) box beahviour (width, height, position, top, left, margin, etc) (= affects box sizing)
-  2) Color, shadows, etc (= affects box style)
-  3) fonts and etc (= affects font / text properties)
-
-  > background-color: rgba(127, 85, 61, 0.9);
-  > font-size: 1.2em;
-  > position: fixed;
-  > width: 100%;
-
-  becomes
-  
-  > position: fixed;
-  > width: 100%;
-  > background-color: rgba(127, 85, 61, 0.9);
-  > font-size: 1.2em;
-*/
-
 .navbar-dark {
+  width: 100%;
+  position: fixed;
   background-color: rgba(127, 85, 61, .96);
   font-size: 1.2em;
-  position: fixed;
-  width: 100%;
 }
 
 .navbar-dark .nav-link:hover,
@@ -80,10 +52,14 @@ section {
 }
 
 .splash {
-  background-image: url("../images/background-splash.jpg");
-  background-position: top center;
   height: 70vh;
   margin-top: 50px;
+  background-position: top center;
+  background-image: url("../images/background-splash.jpg");
+}
+
+.splash h1, h2 {
+  text-shadow: 2px 2px 1px black;
 }
 
 .splash h2 {
@@ -91,9 +67,9 @@ section {
 }
 
 .splash .card {
+  margin-top: 10%;
   background: none;
   border: none;
-  margin-top: 15%;
 }
 
 .splash span {
@@ -113,13 +89,13 @@ section {
 }
 
 .splash .fa-facebook {
-  background: #3B5998;
   padding: 13px 23px;
+  background: #3B5998;
 }
 
 .splash .fa-youtube {
-  background: #ff0000;
   padding: 13px 20px;
+  background: #ff0000;
 }
 
 .media {
@@ -131,79 +107,21 @@ section {
 }
 
 .live {
-  background-image: url("../images/background-live.jpg");
-  background-position: top center;
   min-height: 70vh;
+  background-position: top center;
+  background-image: url("../images/background-live.jpg");
 }
 
 .live .backdrop {
-  background: rgba(60, 60, 60, .7);
   overflow: auto;
+  background: rgba(60, 60, 60, .7);
 }
 
 .live td:first-child,
 .live td:last-child {
-  width: 150px;
+  width: 175px;
 }
 
-/* you declared the .splash elements, then .live, then .splash */
-
-/*
-  maby better to get those in a seperate file. 
-  the reason is because you have to INSURE it's loaded after the all code to overwritte correctly.
-  By best practice (when it's not module separeted) I put them in a new responsive.css or media.css file
-  I link them on the html file with a comment like
-  <!-- Ensure load priority to last -->
-  <tag_here ... />
-*/
-@media (max-width: 992px){
-  .container{
-    max-width:100%;
-  }
+.table td {
+  border-top: 0;
 }
-
-@media (max-width: 768px){
-  .display-1 {
-    font-size: 5.5rem;
-  }
-
-  .splash h2 {
-    font-size: 30px;
-  }
-
-  .container {
-    /* this seems dangerous to me */
-    padding: 0;
-  }
-
-  .container-fluid {
-    /* this seems dangerous to me */
-    padding: 0;
-  }
-
-  .embed-soundcloud {
-    margin-bottom: 5%;
-  }
-
-  .media h2 {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 567px){
-  .display-1 {
-    font-size: 4.5rem;
-  }
-
-  .splash h2 {
-    font-size: 20px;
-  }
-}
-
-/*
-Extra small <576px 
-Small ≥576px
-Medium ≥768px
-Large ≥992px
-Extra large ≥1200px
-*/
