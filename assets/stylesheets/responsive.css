@@ -4,7 +4,8 @@
   }
 
   .splash {
-  margin-top: 20%;
+    margin-top: 20%;
+  }
 }
 
 @media (max-width: 768px){
@@ -19,10 +20,6 @@
   .embed-soundcloud {
     margin-bottom: 5%;
   }
-
-  .media h2 {
-    margin-top: 15px;
-  }
 }
 
 @media (max-width: 567px){
@@ -31,8 +28,8 @@
   }
 
   .splash {
-  margin-top: 25%;
-}
+    /*margin-top: 25%;*/
+  }
 
   .splash h2 {
     font-size: 20px;
@@ -45,11 +42,4 @@
   .live h2 {
     padding-top: 15px;
   }
-
-/*
-Extra small <576px 
-Small ≥576px
-Medium ≥768px
-Large ≥992px
-Extra large ≥1200px
-*/
+}

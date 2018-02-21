@@ -1,3 +1,7 @@
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
 // function greet(firstname) {
 //   if(firstname == "Daniel") {
 //     console.log("Hello " + firstname + " my Portuguese Friend");
