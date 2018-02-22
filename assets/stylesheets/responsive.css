@@ -4,13 +4,17 @@
   }
 
   .splash {
-    margin-top: 20%;
+    margin-top: 40%;
+  }
+
+  .splash h1 {
+    font-size: 7em;
   }
 }
 
 @media (max-width: 768px){
-  .display-1 {
-    font-size: 5.5rem;
+  .splash h1 {
+    font-size: 5.5em;
   }
 
   .splash h2 {
@@ -23,12 +27,12 @@
 }
 
 @media (max-width: 567px){
-  .display-1 {
-    font-size: 4.5rem;
+  .splash h1 {
+    font-size: 4.5em;
   }
 
   .splash {
-    /*margin-top: 25%;*/
+    min-height: 50vh;
   }
 
   .splash h2 {
