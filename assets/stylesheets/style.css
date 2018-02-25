@@ -46,6 +46,7 @@ section {
 .nav-link {
   padding-bottom: 12px;
   padding-top: 10px;
+  color: white !important;
 }
 
 .nav-link.active {
