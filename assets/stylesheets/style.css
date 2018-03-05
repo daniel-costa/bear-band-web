@@ -22,13 +22,6 @@ main {
   top: 0;
 }
 
-section {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-}
-
 .navbar-dark {
   width: 100%;
   position: fixed;
@@ -56,9 +49,6 @@ section {
 
 .splash {
   min-height: 60vh;
-  margin-top: 25%;
-  background-position: top center;
-  background-image: url("../images/1background-splash.jpg");
 }
 
 .splash h1, h2 {
@@ -67,10 +57,15 @@ section {
 
 .splash h1 {
   font-size: 9em;
+  padding-top: 30%;
 }
 
 .splash h2 {
   font-size: 40px;
+}
+
+.splash .buttons {
+  padding-bottom: 20%;
 }
 
 .splash span {
@@ -100,28 +95,17 @@ section {
   background: #ff0000;
 }
 
-.media {
-  background-image: url("../images/1background-media.jpg");
-}
-
 .media .embed-soundcloud {
   margin-top: 5%;
 }
 
 .live {
-  background-position: top center;
-  background-image: url("../images/background-mdedia.jpg");
   background: rgba(160, 160, 160, .3);
   font-size: 1.2em;
 }
 
 .live h2 {
   text-shadow: none;
-}
-
-.live .backdrop {
-  overflow: auto;
-  background: rgba(160, 160, 160, .7);
 }
 
 .live .table td {

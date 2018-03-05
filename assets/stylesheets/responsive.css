@@ -3,11 +3,8 @@
     max-width:100%;
   }
 
-  .splash {
-    margin-top: 40%;
-  }
-
   .splash h1 {
+    padding-top: 30%
     font-size: 7em;
   }
 }
